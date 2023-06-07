@@ -542,6 +542,10 @@ body.nav-active { overflow: hidden; }
 
 .accordion-card .card-title { padding-block-end: 20px; }
 
+.accordion-card-small { padding-bottom: 0px; margin-bottom: 0; font-size: small;}
+
+.accordion-card-small .card-title { padding-block-end: 0px; }
+
 .accordion-btn {
   display: flex;
   align-items: center;
@@ -558,6 +562,11 @@ body.nav-active { overflow: hidden; }
   transform: rotate(0.5turn);
 }
 
+.accordion-card-small.expanded .accordion-btn ion-icon {
+  transform: rotate(0.5turn);
+}
+
+
 .accordion-btn .span { transition: var(--transition-1); }
 
 .accordion-btn:is(:hover, :focus-visible) .span,
@@ -573,6 +582,13 @@ body.nav-active { overflow: hidden; }
   max-height: max-content;
   padding-block-end: 20px;
 }
+
+.accordion-card-small.expanded .accordion-content {
+  max-height: max-content;
+  padding-block-end: 0px;
+}
+
+
 
 
 
